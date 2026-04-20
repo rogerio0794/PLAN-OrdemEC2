@@ -1,0 +1,62 @@
+{
+    "settings": {
+        "optimality_gap": 0.001,
+        "solver_time_limit": 30,
+        "overproduction_percentage": 0.05,
+        "max_grade_combinations": 30,
+        "grade_limit": 4,
+        "max_length": 30000,
+        "min_length": 10,
+        "cost_overproduction_allowed": 10,
+        "cost_overproduction_not_allowed": 100
+    },
+    "settings_seq": {
+        "work_days_week": 5,
+        "capacity_day_machine": 480,
+        "solver_time_limit": 1800,
+        "order_per_lote": 5
+    },
+    "steps": {
+        "spreading": {
+            "process_types": "INT",
+            "setup_time": 5,
+            "make_span_atual": 0,
+            "quantity": 3
+        },
+        "cut": {
+            "process_types": "INT",
+            "setup_time": 6,
+            "make_span_atual": 0,
+            "quantity": 2
+        },
+        "sewing": {
+            "process_types": "INT",
+            "setup_time": 2,
+            "make_span_atual": 0,
+            "capacity": [
+                50000,
+                50000
+            ]
+        },
+        "laundry": {
+            "process_types": "INT",
+            "setup_time": 5,
+            "make_span_atual": 0,
+            "capacity": [
+                50,
+                50
+            ],
+            "ext_process_time": 60,
+            "process_time": 60
+        },
+        "finishing": {
+            "process_types": "INT",
+            "setup_time": 5,
+            "make_span_atual": 0,
+            "capacity": [
+                25000,
+                25000
+            ]
+        }
+    }
+}

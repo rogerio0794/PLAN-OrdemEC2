@@ -1,0 +1,552 @@
+[
+    {
+        "cluster_id": 0,
+        "pedidos_cluster": [
+            "P1",
+            "P2"
+        ],
+        "ORDERS_ORDER_CUTTING": [
+            "P1",
+            "P2"
+        ],
+        "cut_order": {
+            "name": "P1",
+            "order_id": "P1",
+            "order_date": "20/04/2026",
+            "delivery_date": "30/04/2026",
+            "work_days_week": 0.0,
+            "capacity_day_machine": 0.0,
+            "steps": {},
+            "fabric": {
+                "cut_order_fabric_id": "99345678",
+                "name": "algodão",
+                "gramatura": 150,
+                "max_layers": 150,
+                "max_length": 30000,
+                "widths": [
+                    {
+                        "width": 1500,
+                        "cost_per_meter": 16.43,
+                        "spread_head": 40,
+                        "margin_top": 40,
+                        "margin_bottom": 40
+                    }
+                ],
+                "info": {
+                    "speed_spreading": 30,
+                    "time_spreading_between_layers": 0.1,
+                    "speed_cutting": 10
+                }
+            },
+            "patterns": [
+                {
+                    "cut_order_pattern_id": 12345678,
+                    "name": "Camisa manga longa 1",
+                    "source_order_id": "P1",
+                    "average_time_sewing_per_unit": 6,
+                    "average_time_finishing_per_unit": 2,
+                    "quantity": {
+                        "azul": {
+                            "PP": 5000,
+                            "P": 2000,
+                            "M": 2000,
+                            "G": 0,
+                            "G2": 0,
+                            "G3": 0,
+                            "G4": 0
+                        }
+                    }
+                },
+                {
+                    "cut_order_pattern_id": 12345678,
+                    "name": "Camisa manga longa 1",
+                    "source_order_id": "P2",
+                    "average_time_sewing_per_unit": 6,
+                    "average_time_finishing_per_unit": 2,
+                    "quantity": {
+                        "azul": {
+                            "PP": 1000,
+                            "P": 1000,
+                            "M": 1000,
+                            "G": 1000,
+                            "G2": 0,
+                            "G3": 0,
+                            "G4": 0
+                        }
+                    }
+                }
+            ],
+            "status": "Optimal",
+            "objective": 112301.3843,
+            "cost_overproduction_allowed": 0.0,
+            "cost_fabric": 107003.91,
+            "cost_cut": 4903.16,
+            "cost_setup": 394.32,
+            "results": {
+                "spreads": {
+                    "1500": [
+                        {
+                            "grades": [
+                                {
+                                    "PP": 20,
+                                    "P": 8,
+                                    "M": 8,
+                                    "G": 0,
+                                    "G2": 0,
+                                    "G3": 0,
+                                    "G4": 0
+                                },
+                                {
+                                    "PP": 4,
+                                    "P": 4,
+                                    "M": 4,
+                                    "G": 4,
+                                    "G2": 0,
+                                    "G3": 0,
+                                    "G4": 0
+                                }
+                            ],
+                            "layers": 250,
+                            "spread_quantity": 2,
+                            "colorways": {
+                                "azul": 250
+                            },
+                            "saving": 0.8067,
+                            "spread_length": 26050.86,
+                            "total_perimeter": 497378.46
+                        }
+                    ]
+                },
+                "total": {
+                    "azul": {
+                        "production": [
+                            {
+                                "PP": 5000,
+                                "P": 2000,
+                                "M": 2000,
+                                "G": 0,
+                                "G2": 0,
+                                "G3": 0,
+                                "G4": 0
+                            },
+                            {
+                                "PP": 1000,
+                                "P": 1000,
+                                "M": 1000,
+                                "G": 1000,
+                                "G2": 0,
+                                "G3": 0,
+                                "G4": 0
+                            }
+                        ],
+                        "over": [
+                            {
+                                "PP": 0,
+                                "P": 0,
+                                "M": 0,
+                                "G": 0,
+                                "G2": 0,
+                                "G3": 0,
+                                "G4": 0
+                            },
+                            {
+                                "PP": 0,
+                                "P": 0,
+                                "M": 0,
+                                "G": 0,
+                                "G2": 0,
+                                "G3": 0,
+                                "G4": 0
+                            }
+                        ]
+                    }
+                }
+            },
+            "operating_results": {
+                "spreads": [
+                    {
+                        "cut_order_fabric_id": "99345678",
+                        "width": 1500,
+                        "colorways": [
+                            {
+                                "id": "azul",
+                                "layers": 250
+                            }
+                        ],
+                        "grades": [
+                            {
+                                "cut_order_pattern_id": 12345678,
+                                "grade": "PP",
+                                "quantity": 20
+                            },
+                            {
+                                "cut_order_pattern_id": 12345678,
+                                "grade": "P",
+                                "quantity": 8
+                            },
+                            {
+                                "cut_order_pattern_id": 12345678,
+                                "grade": "M",
+                                "quantity": 8
+                            },
+                            {
+                                "cut_order_pattern_id": 12345678,
+                                "grade": "PP",
+                                "quantity": 4
+                            },
+                            {
+                                "cut_order_pattern_id": 12345678,
+                                "grade": "P",
+                                "quantity": 4
+                            },
+                            {
+                                "cut_order_pattern_id": 12345678,
+                                "grade": "M",
+                                "quantity": 4
+                            },
+                            {
+                                "cut_order_pattern_id": 12345678,
+                                "grade": "G",
+                                "quantity": 4
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    {
+        "cluster_id": 1,
+        "pedidos_cluster": [
+            "P3-A",
+            "P3-B",
+            "P4"
+        ],
+        "ORDERS_ORDER_CUTTING": [
+            "P3-A",
+            "P3-B",
+            "P4"
+        ],
+        "cut_order": {
+            "name": "P3-A",
+            "order_id": "P3",
+            "order_date": "20/04/2026",
+            "delivery_date": "30/04/2026",
+            "work_days_week": 0.0,
+            "capacity_day_machine": 0.0,
+            "steps": {},
+            "fabric": {
+                "cut_order_fabric_id": "99345678",
+                "name": "poliester",
+                "gramatura": 100,
+                "max_layers": 150,
+                "max_length": 30000,
+                "widths": [
+                    {
+                        "width": 1500,
+                        "cost_per_meter": 16.43,
+                        "spread_head": 40,
+                        "margin_top": 40,
+                        "margin_bottom": 40
+                    }
+                ],
+                "info": {
+                    "speed_spreading": 35,
+                    "time_spreading_between_layers": 0.1,
+                    "speed_cutting": 12
+                }
+            },
+            "patterns": [
+                {
+                    "cut_order_pattern_id": 12345678,
+                    "name": "Camisa manga longa 1",
+                    "source_order_id": "P3",
+                    "average_time_sewing_per_unit": 6,
+                    "average_time_finishing_per_unit": 2,
+                    "quantity": {
+                        "azul": {
+                            "PP": 100,
+                            "P": 100,
+                            "M": 100,
+                            "G": 500,
+                            "G2": 0,
+                            "G3": 0,
+                            "G4": 0
+                        }
+                    }
+                },
+                {
+                    "cut_order_pattern_id": 23456789,
+                    "name": "Camisa manga longa 2",
+                    "source_order_id": "P3",
+                    "average_time_sewing_per_unit": 6,
+                    "average_time_finishing_per_unit": 2,
+                    "quantity": {
+                        "azul": {
+                            "PP": 1000,
+                            "P": 1000,
+                            "M": 1000,
+                            "G": 0,
+                            "G2": 0,
+                            "G3": 0,
+                            "G4": 0
+                        }
+                    }
+                },
+                {
+                    "cut_order_pattern_id": 12345678,
+                    "name": "Camisa manga longa 1",
+                    "source_order_id": "P4",
+                    "average_time_sewing_per_unit": 6,
+                    "average_time_finishing_per_unit": 2,
+                    "quantity": {
+                        "azul": {
+                            "PP": 1000,
+                            "P": 500,
+                            "M": 500,
+                            "G": 500,
+                            "G2": 0,
+                            "G3": 0,
+                            "G4": 0
+                        }
+                    }
+                }
+            ],
+            "status": "Optimal",
+            "objective": 55198.4302,
+            "cost_overproduction_allowed": 0.0,
+            "cost_fabric": 52387.09,
+            "cost_cut": 2417.02,
+            "cost_setup": 394.32,
+            "results": {
+                "spreads": {
+                    "1500": [
+                        {
+                            "grades": [
+                                {
+                                    "PP": 1,
+                                    "P": 1,
+                                    "M": 1,
+                                    "G": 0,
+                                    "G2": 0,
+                                    "G3": 0,
+                                    "G4": 0
+                                },
+                                {
+                                    "PP": 0,
+                                    "P": 0,
+                                    "M": 0,
+                                    "G": 0,
+                                    "G2": 0,
+                                    "G3": 0,
+                                    "G4": 0
+                                },
+                                {
+                                    "PP": 0,
+                                    "P": 0,
+                                    "M": 0,
+                                    "G": 0,
+                                    "G2": 0,
+                                    "G3": 0,
+                                    "G4": 0
+                                }
+                            ],
+                            "layers": 100,
+                            "spread_quantity": 1,
+                            "colorways": {
+                                "azul": 100
+                            },
+                            "saving": 0.7517,
+                            "spread_length": 1618.46,
+                            "total_perimeter": 28731.96
+                        },
+                        {
+                            "grades": [
+                                {
+                                    "PP": 0,
+                                    "P": 0,
+                                    "M": 0,
+                                    "G": 4,
+                                    "G2": 0,
+                                    "G3": 0,
+                                    "G4": 0
+                                },
+                                {
+                                    "PP": 8,
+                                    "P": 8,
+                                    "M": 8,
+                                    "G": 0,
+                                    "G2": 0,
+                                    "G3": 0,
+                                    "G4": 0
+                                },
+                                {
+                                    "PP": 8,
+                                    "P": 4,
+                                    "M": 4,
+                                    "G": 4,
+                                    "G2": 0,
+                                    "G3": 0,
+                                    "G4": 0
+                                }
+                            ],
+                            "layers": 125,
+                            "spread_quantity": 1,
+                            "colorways": {
+                                "azul": 125
+                            },
+                            "saving": 0.8136,
+                            "spread_length": 24213.25,
+                            "total_perimeter": 461634.9
+                        }
+                    ]
+                },
+                "total": {
+                    "azul": {
+                        "production": [
+                            {
+                                "PP": 100,
+                                "P": 100,
+                                "M": 100,
+                                "G": 500,
+                                "G2": 0,
+                                "G3": 0,
+                                "G4": 0
+                            },
+                            {
+                                "PP": 1000,
+                                "P": 1000,
+                                "M": 1000,
+                                "G": 0,
+                                "G2": 0,
+                                "G3": 0,
+                                "G4": 0
+                            },
+                            {
+                                "PP": 1000,
+                                "P": 500,
+                                "M": 500,
+                                "G": 500,
+                                "G2": 0,
+                                "G3": 0,
+                                "G4": 0
+                            }
+                        ],
+                        "over": [
+                            {
+                                "PP": 0,
+                                "P": 0,
+                                "M": 0,
+                                "G": 0,
+                                "G2": 0,
+                                "G3": 0,
+                                "G4": 0
+                            },
+                            {
+                                "PP": 0,
+                                "P": 0,
+                                "M": 0,
+                                "G": 0,
+                                "G2": 0,
+                                "G3": 0,
+                                "G4": 0
+                            },
+                            {
+                                "PP": 0,
+                                "P": 0,
+                                "M": 0,
+                                "G": 0,
+                                "G2": 0,
+                                "G3": 0,
+                                "G4": 0
+                            }
+                        ]
+                    }
+                }
+            },
+            "operating_results": {
+                "spreads": [
+                    {
+                        "cut_order_fabric_id": "99345678",
+                        "width": 1500,
+                        "colorways": [
+                            {
+                                "id": "azul",
+                                "layers": 100
+                            }
+                        ],
+                        "grades": [
+                            {
+                                "cut_order_pattern_id": 12345678,
+                                "grade": "PP",
+                                "quantity": 1
+                            },
+                            {
+                                "cut_order_pattern_id": 12345678,
+                                "grade": "P",
+                                "quantity": 1
+                            },
+                            {
+                                "cut_order_pattern_id": 12345678,
+                                "grade": "M",
+                                "quantity": 1
+                            }
+                        ]
+                    },
+                    {
+                        "cut_order_fabric_id": "99345678",
+                        "width": 1500,
+                        "colorways": [
+                            {
+                                "id": "azul",
+                                "layers": 125
+                            }
+                        ],
+                        "grades": [
+                            {
+                                "cut_order_pattern_id": 12345678,
+                                "grade": "G",
+                                "quantity": 4
+                            },
+                            {
+                                "cut_order_pattern_id": 23456789,
+                                "grade": "PP",
+                                "quantity": 8
+                            },
+                            {
+                                "cut_order_pattern_id": 23456789,
+                                "grade": "P",
+                                "quantity": 8
+                            },
+                            {
+                                "cut_order_pattern_id": 23456789,
+                                "grade": "M",
+                                "quantity": 8
+                            },
+                            {
+                                "cut_order_pattern_id": 12345678,
+                                "grade": "PP",
+                                "quantity": 8
+                            },
+                            {
+                                "cut_order_pattern_id": 12345678,
+                                "grade": "P",
+                                "quantity": 4
+                            },
+                            {
+                                "cut_order_pattern_id": 12345678,
+                                "grade": "M",
+                                "quantity": 4
+                            },
+                            {
+                                "cut_order_pattern_id": 12345678,
+                                "grade": "G",
+                                "quantity": 4
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+]

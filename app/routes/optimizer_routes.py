@@ -9,8 +9,20 @@ from utils.io import *
 
 optimizer_bp = Blueprint("optimizer", __name__)
 
+
+
+
 # Nome do arquivo de controle
 RESULT_FILE = "saida_completa.json"
+
+@optimizer_bp.route("/", methods=["GET"])
+def health_check():
+    """Rota padrão para verificar se a API está online"""
+    return jsonify({
+        "status": "online",
+        "message": "API de Otimização PLAN-OrdemEC2 OK",
+        "versao": "1.1"
+    }), 200
 
 @optimizer_bp.route("/status", methods=["GET"])
 def check_status():    
